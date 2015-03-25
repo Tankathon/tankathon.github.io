@@ -19,18 +19,28 @@
   </head>
   <body>
     <div class="container">
-        <!--Satic Navbar-->
-        <nav id="menu-contenedor" class="navbar navbar-default" role="navigation">
-          <?php include "menu.php"; ?>
-        </nav>
-    </div>
-    <div class="container" id="home">
-      <section>
-        <?php include "home.php"; ?>
-      </section>
-    </div>
+      <!--Satic Navbar-->
+      <!--<nav id="menu-contenedor" class="navbar navbar-default" role="navigation">
+        <?php include "menu.php"; ?>
+      </nav>-->
+      <div role="tabpanel">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+          <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+          <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+          <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+        </ul>
 
-        
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="home">...ESTO ES EL HOME</div>
+          <div role="tabpanel" class="tab-pane" id="profile">...</div>
+          <div role="tabpanel" class="tab-pane" id="messages">...</div>
+          <div role="tabpanel" class="tab-pane" id="settings">...</div>
+        </div>
+      </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -45,7 +55,7 @@
       toggle: false,
     })
 
-    $('#myTab a').click(function (e) {
+    $('#myTab a').on('click', function (e) {
       e.preventDefault()
       $(this).tab('show')
     })
