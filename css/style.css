@@ -2,10 +2,32 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-#ProjectName{
-	width: 100px;
-	height: 28px
+/*design of the main menu*/
+.nav-tabs{
+	border: 0.5px solid #E7E7E7 !important;
+	background: #F8F8F8;
+	border-radius: 4px;
+
 }
-.nav-tabs {
-	border-bottom: none;
+.nav-tabs > li {
+	margin-bottom: 0px;
+}
+.nav-tabs > li.active > a{
+	border-color: transparent !important;
+	border-radius:none;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus{
+	background-color: #DDD;
+	border-radius: 0px;
+}
+
+.nav-tabs > li > a:hover {
+	border-color: transparent;
+}
+.nav > li > a:hover {
+	background-color: transparent !important; 
+}
+
+#espacio{
+	padding-top: 20px;
 }
