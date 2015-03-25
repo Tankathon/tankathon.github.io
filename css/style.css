@@ -1,0 +1,11 @@
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#ProjectName{
+	width: 100px;
+	height: 28px
+}
+.nav-tabs {
+	border-bottom: none;
+}
