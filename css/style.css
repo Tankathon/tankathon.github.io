@@ -20,7 +20,9 @@ body {
 	background-color: #DDD;
 	border-radius: 0px;
 }
-
+.nav-tabs.nav-justified > li > a {
+	border-bottom: none;
+}
 .nav-tabs > li > a:hover {
 	border-color: transparent;
 }
@@ -37,4 +39,9 @@ body {
 /*End design of the main menu*/
 #espacio{
 	padding-top: 20px;
+}
+/*Image*/
+#gitjetpack{
+	width: 200px;
+	height: 200px;
 }
