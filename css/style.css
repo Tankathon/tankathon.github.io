@@ -2,7 +2,7 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-/*design of the main menu*/
+/*Design of the main menu*/
 .nav-tabs{
 	border: 0.5px solid #E7E7E7 !important;
 	background: #F8F8F8;
@@ -27,7 +27,14 @@ body {
 .nav > li > a:hover {
 	background-color: transparent !important; 
 }
-
+.navbar-header {
+	height: 42px;
+}
+.navbar-brand img{
+	height: 20px;
+	width: 50px;
+}
+/*End design of the main menu*/
 #espacio{
 	padding-top: 20px;
 }
