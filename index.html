@@ -6,7 +6,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Hackathon</title>
 
-    <!-- Bootstrap -->
+    <!-- Styles -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -17,10 +17,11 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+
   <body>
     <div class="container">
+      <!-- Nav tabs -->
       <div role="tabpanel">
-        <!-- Nav tabs -->
         <ul class="nav nav-tabs nav-justified" role="tablist" id="myTab">
           <div class="navbar-header navbar-header-logo">
           <a class="navbar-brand"><img src="img/Hackathon-logo.png" id="logo" class="img-responsive" alt="Responsive image" /></a>
@@ -31,7 +32,8 @@
           <li role="presentation"><a href="#staff" aria-controls="staff" role="tab" data-toggle="tab">Staff</a></li>
         </ul>
       </div>
-      <!-- Tab panes -->
+
+      <!-- Home Tab -->
       <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="home">
           <div class="container" id="espacio">
@@ -44,11 +46,15 @@
             </div>
           </div>
         </div>
+
+        <!-- Robocode Tab -->
         <div role="tabpanel" class="tab-pane" id="robocode">
           <div class="container" id="espacio">
-            <img src="img/robocode.jpg" alt="gitjetpack" class="img-rounded" id="gitjetpack">
+            <img src="img/robocode_logo_tanks.png" alt="Logo Robocode">
           </div>
         </div>
+
+        <!-- Git Tab -->
         <div role="tabpanel" class="tab-pane" id="git">
           <div class="container" id="espacio">
             <div class="row col-md-12">
@@ -63,10 +69,13 @@
             </div>
           </div>
         </div>
+
         <!-- Staff Tab -->
         <div role="tabpanel" class="tab-pane" id="staff">
           <div class="container" id="espacio">
+
           <h2>Organizadores</h2>
+
             <div class="row">
               <div class="top30">
                 <div class="col-md-1 nopadding">
@@ -89,6 +98,7 @@
                 </div>
               </div>
             </div>
+
             <div class="row">
               <div class="top30">
                 <div class="col-md-1 nopadding">
@@ -101,7 +111,9 @@
                 </div>
               </div>
             </div>
+
             <h2 class="top30">Colaboradores</h2>
+
             <div class="row">
               <div class="top30">
                 <div class="col-md-1 nopadding">
@@ -124,6 +136,7 @@
                 </div>
               </div>
             </div>
+
             <div class="row">
               <div class="top30">
                 <div class="col-md-1 nopadding">
@@ -146,6 +159,7 @@
                 </div>
               </div>
             </div>
+
             <div class="row">
               <div class="top30">
                 <div class="col-md-1 nopadding">
@@ -168,6 +182,7 @@
                 </div>
               </div>
             </div>
+
             <div class="row">
               <div class="top30">
                 <div class="col-md-1 nopadding">
@@ -211,7 +226,7 @@
     $('#myTab a').on('click', function (e) {
       e.preventDefault()
       $(this).tab('show')
-    })
+    });
 
     $(document).ready(function() {
       if(location.hash) {
