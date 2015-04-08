@@ -19,25 +19,71 @@
   </head>
 
   <body>
-    <div id="navbar"></div>
-    <div class="container">
 
+    <div id="header" class="jumbotron">
+      <h1>Hello, world!</h1>
+      <p>...</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <div id="wrap">
+      <div id="navbar"></div>
+
+      <div class="container">
+        <div class="row col-md-12 col-xs-12">
+          <div class="col-md-6 col-xs-6 text-center">
+            <a href="https://docs.google.com/forms/d/1ZrgoNzk3b7hK6mNfbQDwEadp9oOsgZKClxwElCQ_rm8/viewform?usp=send_form" class="btn btn-lg btn-primary" target="_blank"><img src="img/Robocode_tank.png" alt="Logo Tankathon" class="buttons"/>Inscripción Tankathon</a>
+          </div>
+          <div class="col-md-6 col-xs-6 text-center">
+            <a href="https://docs.google.com/forms/d/1jvomMMsfZjLxr9p9cn8wmYNvuQnY68ygSuifLUZghw4/viewform?usp=send_form" class="btn btn-lg btn-primary" target="_blank"><img src="img/octocatjedi.png" alt="Logo Octocat" class="buttons"/>Inscripción Curso Git</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
   </body>
 </html>
-<!-- Personal Scripts -->
+
 <script language="javascript">
+
   $(function(){
-    $("#navbar").load("navbar.html");
+    $("#navbar").load("navbar.html", function() {
+      $('.nav a:contains("Inicio")').parent().addClass('active');
+    });
   });
+
   $(document).ready(function() {
-    // Colapse menu
     $('#collapse').collapse({
       toggle: false,
-    })
+    });
+
+    $("#wrap").css("margin-top",$("#header").height()+"px");
+
+    $("#nav ul li a[href^='#']").on('click', function(e) {
+      e.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 1000, function(){
+         window.location.hash = hash;
+        });
+    });
+
+    $( window ).resize(function() {
+      $("#wrap").css("margin-top",$("#header").height()+"px");
+    });
+
+    var cont_offset = $('#menu-contenedor').offset();
+    $(window).on('scroll', function() {
+      if($(window).scrollTop() > cont_offset.top) {
+        $("#menu-contenedor").addClass('navbar-fixed-top');
+        $(".navbar").css("box-shadow","0 0 15px #BFBFBF");
+      } else {
+        $("#menu-contenedor").removeClass('navbar-fixed-top');
+        $(".navbar").css("box-shadow","0");
+      }
+    });
   });
+
 </script>

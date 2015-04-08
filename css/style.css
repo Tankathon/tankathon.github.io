@@ -79,3 +79,30 @@ tr{
 .buttons{
 	margin:5px;
 }
+#header {
+    background-color: #404D75;
+    background: url("../img/header.png") no-repeat;
+    color: #FFFFFF;
+    display: table;
+    min-height: 150px;
+    left: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+}
+#header img{
+	padding-top:1.5em;
+	padding-bottom:1.5em;
+	width:99%;
+	max-width:647px;
+}
+
+#wrap {
+    margin-top: 300px;
+    position: relative;
+    z-index: 10; 
+    background:#fefefe;
+}
