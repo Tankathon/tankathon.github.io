@@ -19,240 +19,63 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="">Tankathon UPM 2015</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <!-- Left side -->
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#inicio">Inicio <span class="sr-only">(current)</span></a></li>
+              <li><a href="#robocode">¿Qué es Robocode?</a></li>
+              <li><a href="#git">Curso Git</a></li>
+              <li class="dropdown">
+                <a href="#tankathon" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tankathon <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Right side -->
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#normativa">Normativa</a></li>
+              <li><a href="#staff">Staff</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
     <div class="container">
-      <!-- Nav tabs -->
-      <div role="tabpanel">
-        <ul class="nav nav-tabs nav-justified" role="tablist" id="myTab">
-          <div class="navbar-header navbar-header-logo">
-          <a class="navbar-brand"><img src="img/Hackathon-logo.png" id="logo" class="img-responsive" alt="Responsive image" /></a>
-          </div>
-          <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Inicio</a></li>
-          <li role="presentation"><a href="#robocode" aria-controls="robocode" role="tab" data-toggle="tab">¿Qué es Robocode?</a></li>
-          <li role="presentation"><a href="#git" aria-controls="git" role="tab" data-toggle="tab">Git</a></li>
-          <li role="presentation"><a href="#staff" aria-controls="staff" role="tab" data-toggle="tab">Staff</a></li>
-        </ul>
-      </div>
 
-      <!-- Home Tab -->
-      <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="home">
-          <div class="container" id="espacio">
-            <div class="row col-md-12 col-xs-12">
-              <div class="col-md-6 col-xs-6 text-center">
-                <a href="https://docs.google.com/forms/d/1ZrgoNzk3b7hK6mNfbQDwEadp9oOsgZKClxwElCQ_rm8/viewform?usp=send_form" class="btn btn-lg btn-primary" target="_blank"><img src="img/Robocode_tank.png" alt="Logo Tankathon" class="buttons"/>Inscripción Tankathon</a>
-              </div>
-              <div class="col-md-6 col-xs-6 text-center">
-                <a href="https://docs.google.com/forms/d/1jvomMMsfZjLxr9p9cn8wmYNvuQnY68ygSuifLUZghw4/viewform?usp=send_form" class="btn btn-lg btn-primary" target="_blank"><img src="img/octocatjedi.png" alt="Logo Octocat" class="buttons"/>Inscripción Curso Git</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Robocode Tab -->
-        <div role="tabpanel" class="tab-pane" id="robocode">
-          <div class="container" id="espacio">
-            <img src="img/robocode_logo_tanks.png" alt="Logo Robocode" class="center-block">
-          </div>
-        </div>
-
-        <!-- Git Tab -->
-        <div role="tabpanel" class="tab-pane" id="git">
-          <div class="container" id="espacio">
-            <div class="row col-md-12">
-              <div class="col-md-3">
-                <img src="img/jetpacktocat.png" alt="gitjetpack" class="img-rounded" id="gitjetpack">
-              </div>
-              <div class="col-md-9">
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra orci non odio ornare molestie. Pellentesque commodo ex non sagittis luctus. Nam pulvinar magna ut purus lacinia, non convallis orci efficitur. Proin interdum malesuada neque, sit amet luctus sapien dictum sed. Sed viverra sem sit amet leo iaculis, in placerat sem eleifend. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque tempus urna sem. Sed quis hendrerit tortor. Suspendisse et nulla convallis, sodales massa a, lobortis libero. Suspendisse est mi, congue nec nisi at, iaculis volutpat quam. Duis ut ultrices tellus, vel pretium nisi. Donec non velit a risus placerat iaculis.</p>
-                <p>In sit amet maximus nunc. Quisque auctor, dui eu ultricies egestas, lacus enim vulputate mi, a vestibulum nisl leo molestie turpis. Nam eget consectetur odio. Quisque vel lacus vulputate, tempus nisl sed, placerat nibh. Donec vitae mauris ultricies, luctus erat vitae, dignissim leo. Maecenas magna mauris, pharetra et nisi quis, consequat pellentesque ante. Cras placerat magna vitae dolor placerat, non aliquam erat varius. Vivamus volutpat ipsum eget massa mattis, pellentesque lacinia leo ornare. Integer cursus urna magna, at faucibus mauris egestas ac. Duis bibendum, enim in feugiat pulvinar, lacus purus ullamcorper ante, vitae lacinia mi lacus vel purus. Donec faucibus, nibh ac ultrices interdum, turpis mi pulvinar elit, non elementum risus ipsum consectetur tortor. Suspendisse convallis imperdiet pulvinar. Phasellus varius velit turpis. Nulla a venenatis nisi, id ornare turpis. Suspendisse faucibus at ipsum at tristique.</p>
-                <p>Vestibulum sit amet quam a erat venenatis pulvinar sed id nibh. Nulla tempor, ipsum vitae hendrerit fermentum, nisi est venenatis metus, vel ullamcorper nunc ipsum et massa. Mauris nec porttitor urna, imperdiet placerat enim. Sed nisi sapien, convallis eu nunc ac, imperdiet vulputate lorem. Aliquam eleifend orci a libero faucibus dignissim. Donec ultricies sollicitudin pulvinar. Donec cursus suscipit lectus eu imperdiet. Mauris condimentum magna purus, sit amet euismod ex volutpat in. Fusce semper diam sed metus cursus auctor. Phasellus nunc risus, scelerisque non lacus imperdiet, efficitur sodales orci. Nulla ornare volutpat sem, vel varius eros lobortis a. Nullam at orci id nulla vestibulum tincidunt eu a dui. </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Staff Tab -->
-        <div role="tabpanel" class="tab-pane" id="staff">
-          <div class="container" id="espacio">
-
-          <h2>Organizadores</h2>
-
-            <div class="row">
-              <div class="top30">
-                <div class="col-md-1 nopadding">
-                  <img src="img/user.png" class="img-responsive">
-                </div>
-                <div class="col-md-5">
-                  <p><strong>Nombre:</strong> Jesús</p>
-                  <p><strong>Apellidos:</strong> Martínez-Barquero Herrada</p>
-                  <p><strong>Correo:</strong> jesusmartinez93@gmail.com</p>
-                </div>
-              </div>
-              <div class="top30">
-                <div class="col-md-1 nopadding">
-                  <img src="img/user.png" class="img-responsive">
-                </div>
-                <div class="col-md-5">
-                  <p><strong>Nombre:</strong> Kevin</p>
-                  <p><strong>Apellidos:</strong> King Sancho</p>
-                  <p><strong>Correo:</strong> kevinks.et@gmail.com</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="top30">
-                <div class="col-md-1 nopadding">
-                  <img src="img/avatars/jose_carlos_padial.png" class="img-responsive avatar">
-                </div>
-                <div class="col-md-5">
-                  <p><strong>Nombre:</strong> Jose Carlos (Pepe)</p>
-                  <p><strong>Apellidos:</strong> Padial Díaz-Merino</p>
-                  <p><strong>Correo:</strong> jose.carlos.padial@gmail.com</p>
-                </div>
-              </div>
-            </div>
-
-            <h2 class="top30">Colaboradores</h2>
-
-            <div class="row">
-              <div class="top30">
-                <div class="col-md-1 nopadding">
-                  <img src="img/user.png" class="img-responsive">
-                </div>
-                <div class="col-md-5">
-                  <p><strong>Nombre:</strong> Nathan</p>
-                  <p><strong>Apellidos:</strong> Consuegra</p>
-                  <p><strong>Correo:</strong> fringe316@gmail.com</p>
-                </div>
-              </div>
-              <div class="top30">
-                <div class="col-md-1 nopadding">
-                  <img src="img/user.png" class="img-responsive">
-                </div>
-                <div class="col-md-5">
-                  <p><strong>Nombre:</strong> Cristina</p>
-                  <p><strong>Apellidos:</strong> Arnáiz Pérez-Villamil</p>
-                  <p><strong>Correo:</strong> cristina_pvillamil@gmail.com</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="top30">
-                <div class="col-md-1 nopadding">
-                  <img src="img/user.png" class="img-responsive">
-                </div>
-                <div class="col-md-5">
-                  <p><strong>Nombre:</strong> Marta</p>
-                  <p><strong>Apellidos:</strong> Álvarez Almazán</p>
-                  <p><strong>Correo:</strong> maralva92@gmail.com</p>
-                </div>
-              </div>
-              <div class="top30">
-                <div class="col-md-1 nopadding">
-                  <img src="img/user.png" class="img-responsive">
-                </div>
-                <div class="col-md-5">
-                  <p><strong>Nombre:</strong> Jose Javier</p>
-                  <p><strong>Apellidos:</strong> Gascón</p>
-                  <p><strong>Correo:</strong> jj.gcarrera@gmail.com</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="top30">
-                <div class="col-md-1 nopadding">
-                  <img src="img/user.png" class="img-responsive">
-                </div>
-                <div class="col-md-5">
-                  <p><strong>Nombre:</strong> Borja</p>
-                  <p><strong>Apellidos:</strong> Molina Rueda</p>
-                  <p><strong>Correo:</strong> borja.molina.rueda@gmail.com</p>
-                </div>
-              </div>
-              <div class="top30">
-                <div class="col-md-1 nopadding">
-                  <img src="img/user.png" class="img-responsive">
-                </div>
-                <div class="col-md-5">
-                  <p><strong>Nombre:</strong> Alex</p>
-                  <p><strong>Apellidos:</strong> Montboic</p>
-                  <p><strong>Correo:</strong> alexmontboik@gmail.com</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="top30">
-                <div class="col-md-1 nopadding">
-                  <img src="img/user.png" class="img-responsive">
-                </div>
-                <div class="col-md-5">
-                  <p><strong>Nombre:</strong> Javier</p>
-                  <p><strong>Apellidos:</strong> Benitez</p>
-                  <p><strong>Correo:</strong> javib51@gmail.com</p>
-                </div>
-              </div>
-              <div class="top30">
-                <div class="col-md-1 nopadding">
-                  <img src="img/user.png" class="img-responsive">
-                </div>
-                <div class="col-md-5">
-                  <p><strong>Nombre:</strong> Dennis</p>
-                  <p><strong>Apellidos:</strong> Ricapa</p>
-                  <p><strong>Correo:</strong> dennisr86@gmail.com</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
+<!-- Personal Scripts -->
 <script language="javascript">
   $(document).ready(function() {
-    /*Colapse menu
+    // Colapse menu
     $('#collapse').collapse({
       toggle: false,
-    })*/
-
-    $('#myTab a').on('click', function (e) {
-      e.preventDefault()
-      $(this).tab('show')
-    });
-
-    $(document).ready(function() {
-      if(location.hash) {
-          $('a[href=' + location.hash + ']').tab('show');
-      }
-      // This element caused the error!!!
-      // $(document.body).on("click", "a[data-toggle]", function(event) {
-      //     location.hash = this.getAttribute("href");
-      // });
-    });
-    $(window).on('popstate', function() {
-        var anchor = location.hash || $("a[data-toggle=tab]").first().attr("href");
-        $('a[href=' + anchor + ']').tab('show');
-    });
-    /*
-     // store the currently selected tab in the hash value
-    $("ul.nav-tabs > li > a").on("shown.bs.tab", function (e) {
-        var id = $(e.target).attr("href").substr(1);
-        window.location.hash = id;
-    });
-
-    // on load of the page: switch to the currently selected tab
-    var hash = window.location.hash;
-    $('#myTab a[href="' + hash + '"]').tab('show');*/
-
+    })
   });
-
 </script>
