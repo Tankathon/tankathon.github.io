@@ -71,6 +71,7 @@
     });
 
     $("#wrap").css("margin-top",$("#header").height()+"px");
+    $("#wrap").css("margin-bottom", $("#footer").outerHeight()+"px");
 
     $("#nav ul li a[href^='#']").on('click', function(e) {
       e.preventDefault();
