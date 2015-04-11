@@ -103,17 +103,15 @@ tr{
 #wrap {
     margin-top: 300px;
     position: relative;
-    z-index: 10; 
+    z-index: 10;
     background:#fefefe;
-    
+
 }
 #footer{
-	margin-top:2em;
 	border-top:1px solid #BFBFBF;
-	box-shadow: 0px -5px 10px #BFBFBF;
-	padding:2em;
+	padding:1em;
 	text-align:center;
-	height: 60px;
+    background-color: #FFFFFF;
 }
 footer{
 	display: block;

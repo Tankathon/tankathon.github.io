@@ -28,12 +28,11 @@
       <div id="navbar"></div>
 
       <div class="container">
-        
+
         <div class="row">
           <div class="col-md-6 col-sm-6" id="espacio"><a href="https://docs.google.com/forms/d/1ZrgoNzk3b7hK6mNfbQDwEadp9oOsgZKClxwElCQ_rm8/viewform?usp=send_form" class="btn btn-lg btn-primary" target="_blank"><img src="img/Robocode_tank.png" alt="Logo Tankathon" class="buttons"/>Inscripción Tankathon</a></div>
           <div class="col-md-6 col-sm-6" id="espacio"><a href="https://docs.google.com/forms/d/1jvomMMsfZjLxr9p9cn8wmYNvuQnY68ygSuifLUZghw4/viewform?usp=send_form" class="btn btn-lg btn-primary" target="_blank"><img src="img/octocatjedi.png" alt="Logo Octocat" class="buttons"/>Inscripción Curso Git</a></div>
         </div>
-        
 
         <div class="row col-md-12 col-xs-12">
           <div class="col-md-6 col-xs-6 text-center">
@@ -46,7 +45,7 @@
         </div>
       </div>
     </div>
-    <div id="footer">
+    <div class="navbar-fixed-bottom" id="footer">
       <div class="container">
         <p class="text-muted">This Bootstrap Example</p>
       </div>
@@ -83,6 +82,7 @@
 
     $( window ).resize(function() {
       $("#wrap").css("margin-top",$("#header").height()+"px");
+      $("#wrap").css("margin-bottom", $("#footer").outerHeight()+"px");
     });
 
     var cont_offset = $('#menu-contenedor').offset();
