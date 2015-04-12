@@ -142,13 +142,14 @@
 
     $("#footer_bar").load("footer.html", function() {
       $("#wrap").css("margin-bottom", $("#footer").outerHeight()+"px");
-    })
+    });
 
     $('#collapse').collapse({
       toggle: false,
     });
 
     $("#wrap").css("margin-top",$("#header").height()+"px");
+    $("#wrap").css("margin-bottom", ($("#footer").outerHeight()+10)+"px");
 
     $("#nav ul li a[href^='#']").on('click', function(e) {
       e.preventDefault();
@@ -160,16 +161,18 @@
 
     $( window ).resize(function() {
       $("#wrap").css("margin-top",$("#header").height()+"px");
-      $("#wrap").css("margin-bottom", $("#footer").outerHeight()+"px");
+      $("#wrap").css("margin-bottom", ($("#footer").outerHeight()+10)+"px");
     });
 
     $(window).on('scroll', function() {
       if($(window).scrollTop() > top) {
         $("#menu-contenedor").addClass('navbar-fixed-top');
         $(".navbar").css("box-shadow","0 0 15px #BFBFBF");
+        $(".container").css("padding-top", "60px");
       } else {
         $("#menu-contenedor").removeClass('navbar-fixed-top');
         $(".navbar").css("box-shadow","0");
+        $(".container").css("padding-top", "0px");
       }
     });
   });
