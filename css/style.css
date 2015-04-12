@@ -26,7 +26,7 @@
 	border-color: transparent;
 }
 .nav > li > a:hover {
-	background-color: transparent !important; 
+	background-color: transparent !important;
 }
 .navbar-header {
 	height: 42px;
@@ -108,10 +108,7 @@ tr{
 
 }
 #footer{
-	border-top:1px solid #BFBFBF;
-	padding:1em;
-	text-align:center;
-    background-color: #FFFFFF;
+    height: 60px;
 }
 footer{
 	display: block;
