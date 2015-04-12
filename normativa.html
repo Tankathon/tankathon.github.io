@@ -1,0 +1,110 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Tankathon</title>
+
+    <!-- Styles -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div id="header" class="jumbotron">
+      <img src="img/logottankathon.png" class="img-responsive" alt="logo Tankathon" />
+    </div>
+
+    <div id="wrap">
+      <div id="navbar"></div>
+
+      <div class="container">
+
+        <h3 id="normas">Normativa de la Tankathon</h3>
+        <p>Para garantizar el buen funcionamiento del evento, se deben respetar las siguientes normas:</p>
+        <ul>
+          <li>Sólo podrán participar personas cubiertas por el seguro de la UPM. Esto es, alumnos de Grado, Máster, Doctorado y personal de la UPM.</li>
+          <li>No se permitirá el acceso a ninguna persona que no esté cubierta por el seguro de la UPM.</li>
+          <li>No se permitirá el acceso a ninguna persona ajena a la organización que no esté inscrita como participante.</li>
+          <li>Se debe presentar a la entrada el mismo DNI / NIF / NIE / Pasaporte que el inscrito durante el proceso de registro.</li>
+          <li>Cada equipo traerá sus propios ordenadores al evento.</li>
+          <li>Solo se podrán utilizar las zonas habilitadas para el evento durante el mismo. Si se tiene que abandonar las zonas habilitadas, se notificará a la organización y será acompañado si el permiso fuera concedido. Por ejemplo, si necesitara acceder a su coche (porque se ha olvidado de algo).</li>
+          <li>Se deberán utilizar de forma correcta las diferentes zonas designadas para la competición, descanso, el comedor y demás.</li>
+          <li>Queda terminantemente prohibido la introducción y/o consumo de alcohol al evento. En el caso de que se encuentre a alguien rompiendo esta norma, el alcohol quedará confiscado, los responsables serán identificados y se avisará al servicio de seguridad para su intervención, además de otras posibles sanciones a criterio de la organización.</li>
+          <li>En caso de querer abandonar el evento de forma prematura, se notificará a la organización. Las puertas del recinto se abrirán sólo cada 6 horas a partir del comienzo del evento. Una vez abandonado el evento, no se podrá regresar.</li>
+          <li>Se debe hacer un buen uso de todo el mobiliario y de las instalaciones del evento. En caso de que se provoquen daños, el/los implicados tendrán que responsabilizarse de los gastos de reparación o sustitución, además de otras posibles sanciones a criterio de la organización.</li>
+          <li>Cualquier abuso, ataque o altercado con o contra cualquier persona o animal durante el curso del evento en la localización del mismo será motivo de expulsión inmediata, avisando al servicio de seguridad, además de otras posibles sanciones a criterio de la organización.</li>
+          <li>El uso intencional de defectos en el software o hardware para influir en el desarrollo de la competición será sancionado con la descalificación del equipo.</li>
+          <li>Cualquier uso de programas maliciosos, que afecten al desarrollo del torneo o a las instalaciones y servicios aportados, será sancionado con la expulsión del evento y otras posibles sanciones a criterio de la organización.</li>
+        </ul>
+
+        <p>En cualquier momento se podrán modificar estas normas bajo el criterio de la organización. En caso de darse una situación no contemplada en las normas, la organización se reserva el derecho de tomar una decisión en base a los hechos y ejecutar las medidas necesarias para la correcta realización del evento.</p>
+        <p>Si se respetan estas normas, todos disfrutaremos más.</p>
+
+      </div>
+    </div>
+
+    <div id="footer_bar" />
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
+
+<script language="javascript">
+
+  $(document).ready(function() {
+    var top;
+    $("#navbar").load("navbar.html", function() {
+      $('.nav a:contains("Normativa")').parent().addClass('active');
+      top = $("#menu-contenedor").offset().top;
+    });
+
+    $("#footer_bar").load("footer.html", function() {
+      $("#wrap").css("margin-bottom", $("#footer").outerHeight()+"px");
+    });
+
+    $('#collapse').collapse({
+      toggle: false,
+    });
+
+    $("#wrap").css("margin-top",$("#header").height()+"px");
+    $("#wrap").css("margin-bottom", ($("#footer").outerHeight()+10)+"px");
+
+    $("#nav ul li a[href^='#']").on('click', function(e) {
+      e.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 1000, function(){
+         window.location.hash = hash;
+        });
+    });
+
+    $( window ).resize(function() {
+      $("#wrap").css("margin-top",$("#header").height()+"px");
+      $("#wrap").css("margin-bottom", ($("#footer").outerHeight()+10)+"px");
+    });
+
+    $(window).on('scroll', function() {
+      if($(window).scrollTop() > top) {
+        $("#menu-contenedor").addClass('navbar-fixed-top');
+        $(".navbar").css("box-shadow","0 0 15px #BFBFBF");
+        $(".container").css("padding-top", "60px");
+      } else {
+        $("#menu-contenedor").removeClass('navbar-fixed-top');
+        $(".navbar").css("box-shadow","0");
+        $(".container").css("padding-top", "0px");
+      }
+    });
+  });
+
+</script>

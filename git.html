@@ -28,32 +28,7 @@
       <div id="navbar"></div>
 
       <div class="container">
-
-        <div id="presentacion">
-          <h4>Bienvenidos a la 1ª edición de nuestra Hackathon: ¡Tankathon UPM 2015!</h4>
-          <p>Los organizadores del evento queremos fomentar una comunidad UPM; una comunidad donde el trabajo en equipo es fundamental. Queremos animaros a todos a tener iniciativa y utilizar todas las oportunidades que están a vuestro alcance. </p>
-          <p>¿Qué mejor forma de lograrlo que trabajando codo con codo durante toda una noche y un dia?</p>
-          <p>En este evento participaréis en equipos de hasta 4 personas, programando un controlador de un tanque utilizando la API de Robocode. ¡Dispondréis de 24 horas para diseñar y programar vuestra propia máquina de combate!</p>
-          <p>Y como sabemos que los que estáis empezando todavía no habéis adquirido suficiente destreza, podéis apuntaros a realizar un curso sobre la herramienta Git en las semanas previas al evento.</p>
-          <p>¡Eso no es todo! Durante la primera hora del evento, haremos un pequeño taller introductorio de la API de Robocode abierto a los que deseen tener una primera toma de contacto.</p>
-          <p>Actualizaremos esta web frecuentemente. ¡No os perdáis nada!</p>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 col-sm-6" id="espacio" style="text-align: center">
-            <a href="https://docs.google.com/forms/d/1ZrgoNzk3b7hK6mNfbQDwEadp9oOsgZKClxwElCQ_rm8/viewform?usp=send_form" class="btn btn-lg btn-primary" target="_blank">
-              <img src="img/Robocode_tank.png" alt="Logo Tankathon" class="buttons"/>Inscripción Tankathon
-            </a>
-          </div>
-
-          <div class="col-md-6 col-sm-6" id="espacio" style="text-align: center">
-            <a href="https://docs.google.com/forms/d/1jvomMMsfZjLxr9p9cn8wmYNvuQnY68ygSuifLUZghw4/viewform?usp=send_form" class="btn btn-lg btn-primary" target="_blank">
-              <img src="img/octocatjedi.png" alt="Logo Octocat" class="buttons"/>Inscripción Curso Git
-            </a>
-          </div>
-        </div>
-
-        <!-- TESTING USE
+        <!-- TESTING USE -->
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -143,7 +118,7 @@
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
       </div>
     </div>
@@ -161,7 +136,7 @@
   $(document).ready(function() {
     var top;
     $("#navbar").load("navbar.html", function() {
-      $('.nav a:contains("Inicio")').parent().addClass('active');
+      $('.nav a:contains("Curso Git")').parent().addClass('active');
       top = $("#menu-contenedor").offset().top;
     });
 

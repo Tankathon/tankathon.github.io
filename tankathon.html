@@ -1,0 +1,122 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Tankathon</title>
+
+    <!-- Styles -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div id="header" class="jumbotron">
+      <img src="img/logottankathon.png" class="img-responsive" alt="logo Tankathon" />
+    </div>
+
+    <div id="wrap">
+      <div id="navbar"></div>
+
+      <div class="container">
+
+        <h3 id="la-competicion">La competición</h3>
+        <p>La competición se basará en combates en formato melé (todos contra todos) de hasta 4 tanques cada vez. Se obtendrá un ganador utilizando el sistema de puntuación implementado por la propia API.</p>
+
+        <p>Los participantes podrán presentar en cualquier momento, durante el tiempo designado del evento, una versión de su controlador. Se utilizarán estas versiones no definitivas para realizar simulaciones de combates, proyectadas a la vista de todos, contra otros controladores.</p>
+
+        <p>Se podrá competir en sólo una de tres categorías:</p>
+        <ul>
+          <li>Principiante: Orientada a equipos formados por los participantes más noveles, que aún están iniciándose en la programación o tienen un conocimiento muy básico. Generalmente, son alumnos de primer y segundo curso del grado.</li>
+          <li>Intermedio: Orientada a equipos formados por los participantes que ya comienzan a dominar la programación y están empezando a aprender conocimientos que pueden aplicar en sus controladores. Generalmente, son alumnos de tercer y cuarto curso del grado.</li>
+          <li>Profesional: Orientada a equipos formados por los participantes que dominan la programación y ya tienen conocimientos suficientes como para realizar una implementación de un controlador fuerte. Generalmente son alumnos del Máster o Doctorado o son personal de la UPM.</li>
+        </ul>
+
+        <p>Estas categorías son orientativas, y podéis intentar participar en una categoría de nivel superior si os veis capacitados para ello. Bajo nuestra recomendación, tomad esta decisión con cautela para poder disfrutar más del evento.</p>
+
+        <p>Finalmente, se realizarán unas rondas de combates inter-categoría donde los más pequeños se puedan enfrentar a los más grandes. Quién sabe, puede que alguno nos sorprenda...</p>
+
+        <h3 id="donde-y-cuando">Dónde y Cuándo</h3>
+        <p>Se realizará en el IMDEA, localizado en el Campus de Montegancedo, Boadilla.</p>
+
+        <!-- TODO: Más información para la localización del evento -->
+
+        <p>Está previsto para el sábado 9 de mayo de 2015. Próximamente se concretará de forma más precisa los horarios.</p>
+
+        <h3 id="normas">Normas</h3>
+        <p>Puedes encontrar las normas en <a href="normativa.html">esta sección</a> de la web</p>
+
+      </div>
+    </div>
+
+    <div id="footer_bar" />
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
+
+<script language="javascript">
+
+  $(document).ready(function() {
+    var top;
+    $("#navbar").load("navbar.html", function() {
+      $('.nav a:contains("Tankathon")').parent().addClass('active');
+      top = $("#menu-contenedor").offset().top;
+      if($(window).scrollTop() > top) {
+        $("#menu-contenedor").addClass('navbar-fixed-top');
+        $(".navbar").css("box-shadow","0 0 15px #BFBFBF");
+        $(".container").css("padding-top", "60px");
+      }
+      $("#footer_bar").load("footer.html", function() {
+        $("#wrap").css("margin-bottom", $("#footer").outerHeight()+"px");
+        if ($($(location).attr('hash')).length > 0) {
+          $(document).scrollTop($($(location).attr('hash')).offset().top - 60);
+        }
+      });
+    });
+
+    $('#collapse').collapse({
+      toggle: false,
+    });
+
+    $("#wrap").css("margin-top",$("#header").height()+"px");
+    $("#wrap").css("margin-bottom", ($("#footer").outerHeight()+10)+"px");
+
+    $("#nav ul li a[href^='#']").on('click', function(e) {
+      e.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 1000, function(){
+         window.location.hash = hash;
+        });
+    });
+
+    $( window ).resize(function() {
+      $("#wrap").css("margin-top",$("#header").height()+"px");
+      $("#wrap").css("margin-bottom", ($("#footer").outerHeight()+10)+"px");
+    });
+
+    $(window).on('scroll', function() {
+      if($(window).scrollTop() > top) {
+        $("#menu-contenedor").addClass('navbar-fixed-top');
+        $(".navbar").css("box-shadow","0 0 15px #BFBFBF");
+        $(".container").css("padding-top", "60px");
+      } else {
+        $("#menu-contenedor").removeClass('navbar-fixed-top');
+        $(".navbar").css("box-shadow","0");
+        $(".container").css("padding-top", "0px");
+      }
+    });
+  });
+
+</script>
