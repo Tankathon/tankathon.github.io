@@ -1,5 +1,5 @@
 /*Design of the main menu*/
-.navbar-header-logo {
+/*.navbar-header-logo {
     height: 41px !important;
  }
 .nav-tabs{
@@ -34,7 +34,7 @@
 .navbar-brand img{
 	height: 20px;
 	width: 50px;
-}
+}*/
 /*End design of the main menu*/
 #espacio{
 	padding-top: 20px;
@@ -101,11 +101,11 @@ tr{
 }
 
 #wrap {
-    margin-top: 300px;
+    margin-top: 300px;/*No lo usa*/
     position: relative;
     z-index: 10;
     background:#fefefe;
-
+    margin-bottom: 80px !important;
 }
 #footer{
     height: 60px;
