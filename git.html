@@ -33,23 +33,69 @@
         <h4 style="text-align: center;">Entonces no te puedes perder este curso. Aprenderás la base de uno de los sistema de control de versiones más usados: <a href="http://git-scm.com/" target="_blank">Git SCM</a>.</h4>
 
         <div id="espacio" style="text-align: center">
-            <a href="https://docs.google.com/forms/d/1jvomMMsfZjLxr9p9cn8wmYNvuQnY68ygSuifLUZghw4/viewform?usp=send_form" class="btn btn-lg btn-primary" target="_blank">
-              <img src="img/octocatjedi.png" alt="Logo Octocat" class="buttons"/>Inscripción Curso Git
-            </a>
+          <a href="https://docs.google.com/forms/d/1jvomMMsfZjLxr9p9cn8wmYNvuQnY68ygSuifLUZghw4/viewform?usp=send_form" class="btn btn-lg btn-primary" target="_blank">
+            <img src="img/octocatjedi.png" alt="Logo Octocat" class="buttons"/>Inscripción Curso Git
+          </a>
         </div>
 
-        <h3>¿Qué es un Git?</h3>
+        <h3 id="que-es-git">¿Qué es Git?</h3>
 
         <p>Como ya hemos dicho, Git es un sistema de control de versiones con el que podremos gestionar y controlar nuestro código fuente. Estos sistemas de control de versiones nos permiten resolver ciertos problemas que los desarrolladores de código encontramos a la hora de programar:</p>
 
         <ul>
-            <li>Documentar los pasos que se han llevado a cabo durante el desarrollo.</li>
-            <li>Poder retroceder en nuestro código a cualquier punto que queramos.</li>
-            <li>Desarrollar de forma colaborativa.</li>
-            <li>Organizar el desarrollo con tag, issues, milestones,...</li>
+          <li>Documentar los pasos que se han llevado a cabo durante el desarrollo.</li>
+          <li>Poder retroceder en nuestro código a cualquier punto que queramos.</li>
+          <li>Desarrollar de forma colaborativa.</li>
+          <li>Organizar el desarrollo con tag, issues, milestones,...</li>
         </ul>
 
         <p>Además de la herramienta Git, veremos dos servidores de repositorio Git muy conocidos en los que podrás aprender a alojar tu código, como <a href="http://www.github.com/" target="_blank">GitHub</a> y <a href="http://www.gitlab.com" target="_blank">GitLab</a>.</p>
+
+        <h3 id="donde-y-cuando">¿Dónde y Cuándo?</h3>
+        <p>Se realizará en la <a href="http://www.fi.upm.es/">Escuela Técnica Superior de Ingenieros Informáticos</a> de la Universidad Politécnica de Madrid, localizada en el Campus de Montegancedo, Boadilla del Monte, Madrid. De momento la curso está previsto para la semana del 4-10 de abril. En breves detallaremos el día, lugar y hora.</p>
+
+        <h3 id="que-necesito">¿Qué se necesita llevar?</h3>
+        <p>Para asistir al curso recomendamos asistir con:</p>
+        <ol>
+          <li>Ordenador personal (Windows / Linux / MacOSX) <b>¡No olvidar el cargador y/o la batería!</b>.</li>
+          <li>Git instalado (<a href="#como-instalar-git">Clic aquí</a> para ver cómo instalar Git).</li>
+          <li>Muchas ganas de aprender.</li>
+        </ol>
+
+        <h3 id="como-instalar-git">¿Cómo instalar Git?</h3>
+
+        <div id="instalar-mac">
+          <h4>MacOSX</h4>
+          <p>Existen diversas formas de instalar Git in MacOSX. Para facilitarnos a todos las cosas, instalaremos Git con la ayuda del instalador de GitHub, que nos instalará Git para nuestra consola y también con interfaz gráfica.</p>
+          <ol>
+            <li>Descargamos la aplicación de GitHub: <a href="https://central.github.com/mac/latest" target="_blank">Descargar</a></li>
+            <li>Una vez copiada la aplicación a nuestra carpeta de aplicaciones, la ejecutamos.</li>
+            <li>En la primera ventana podemos dar de alta nuestro usuario de GitHub, pero no es necesario si no queremos. Pulsamos continuar.</li>
+            <li>En la siguiente ventana, es importante que pulsemos el botón <i>Install Command Line Tools</i> y así tener accesible el mandato <code>git</code> desde nuestra terminal. Pulsamos continuar y después finalizar.
+            <img class="img-responsive" src="img/git/install_github.png"/>
+            </li>
+            <li>Ya podemos cerrar la aplicación y podemos comprobar si tenemos instalado git ejecutando: <code>git --version</code></li>
+          </ol>
+          <p>Otra opción de instalación es a través de la página oficial de git, que ofrece un instalador de git: <a href="http://git-scm.com/download/mac" target="_blank">Descargar</a>.</p>
+          <p>También puedes instalar git a través de gestor de paquetes <b>brew</b>. Simplemente ejecuta: <code>brew install git</code></p>
+        </div>
+
+        <div id="instalar-linux">
+          <h4>Linux</h4>
+          <p>La instalación en linux la realizaremos a través de un terminal.</p>
+          <h6>APT-GET</h6>
+          <pre><code>sudo apt-get install git</code></pre>
+          <h6>PACMAN</h6>
+          <pre><code>pacman -S git</code></pre>
+          <h6>YUM</h6>
+          <pre><code>yum install git</code></pre>
+          <p>Puedes consultar más información <a href="http://git-scm.com/download/linux" target="_blank">aquí</a>.</p>
+        </div>
+
+        <div id="instalar-windows">
+          <h4>Windows</h4>
+          <p>Existen diversas maneras de instalar git en nuestro equipo Windows. Para este sistema operativo utilizaremos el instalador que nos ofrece la página oficial de git, que nos instalará una consola estilo UNIX donde podremos usar git como un un equipo linux: <a href="http://git-scm.com/download/windows" target="_blank">Descargar</a>.</p>
+        </div>
 
       </div>
     </div>
