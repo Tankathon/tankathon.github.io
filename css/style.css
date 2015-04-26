@@ -113,5 +113,10 @@ tr{
 footer{
 	display: block;
 }
+
+p, li {
+    text-align: justify;
+}
+
 /*más tarde*/
 @media (min-width: 768px){}
