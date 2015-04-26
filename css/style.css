@@ -118,5 +118,9 @@ p, li {
     text-align: justify;
 }
 
+#footer img {
+    margin-left: 10px;
+}
+
 /*más tarde*/
 @media (min-width: 768px){}
