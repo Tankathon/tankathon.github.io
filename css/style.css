@@ -121,4 +121,20 @@ p, li {
 }
 
 /*más tarde*/
-@media (min-width: 768px){}
+@media (min-width: 768px){
+	div.col-md-8.col-sm-8{
+		/*padding-right: 15px;
+		padding-left: 15px;
+		min-height: 1px;
+		position: relative;*/
+		width: 70%;
+	}
+	div.col-md-4.col-sm-4{
+		width: 30%;
+	}
+	a.btn.btn-lg.btn-primary{
+		padding: 10px 10px;
+		font-size: 16px;
+	}
+}
+@media (min-width: 1001px){}
