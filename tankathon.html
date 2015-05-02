@@ -13,8 +13,8 @@
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
 
@@ -29,24 +29,33 @@
 
       <div class="container">
 
+        <!-- BEGIN: Introducción -->
         <h3 id="indroduccion">Introducción</h3>
+
         <p> En esta primera convocatoria de nuestra Hackathon, hemos decidido que vamos a trabajar con la API de Robocode.</p>
+
         <p>Esta API es simple y directa, a la par que nos permite recoger todo tipo de   información sobre los combates. En resumidas cuentas, ¡es perfecto para que pongáis a prueba vuestras habilidades!</p>
+
         <p>Como dice el motto de los propios desarrolladores:</p>
+
         <h4 style="text-align: center;">Build the best, destroy the rest!</h4>
+        <!-- END: Introducción -->
 
+        <!-- BEGIN: ¿Qué es Robocode -->
         <h3 id="que-es-robocode">¿Qué es Robocode?</h3>
-        <p>Robocode es una API (Application Programming Inteface) que envuelve todo un sistema de combates entre tanques en dos dimensiones.</p>
-        <p>Esta API permite que nosotros, los programadores, creemos un controlador que potencie una inteligencia artificial para nuestro tanque.</p>
-        <p>Como programador, tendrás total control sobre tu tanque, aunque habrá que tener en cuenta factores como la rotación de la torreta y el campo de visión.</p>
-        <p>Esta API utiliza, aunque no solo, Java como lenguaje. De momento en la Tankathon solo vamos a dar soporte a Java.</p>
-        <p>Podréis encontrar toda la información sobre robocode en <a href="http://robocode.sourceforge.net" target="_blank">su página web</a>.</p>
 
-        <h3 id="premios">Premios</h3>
-        <p>Gracias a <a href="http://www.lurtis.com" target="_blank">Lurtis Rules</a>, ¡podréis ganar una nueva Raspberry Pi 2!. Cada mientro de los equipos ganadores recibirá la suya.</p>
-        <p>Para poder ganar tu Raspberry Pi 2, solo tendréis que ser el mejor equipo entre el resto de participantes de vuestra misma categoría.</p>
-        <p>¡Apuntaros al combate y demostrad ser los dignos ganadores de estas Raspberry Pi 2 que regalamos!.</p>
-        
+        <p>Robocode es una API (Application Programming Inteface) que envuelve todo un sistema de combates entre tanques en dos dimensiones.</p>
+
+        <p>Esta API permite que nosotros, los programadores, creemos un controlador que potencie una inteligencia artificial para nuestro tanque.</p>
+
+        <p>Como programador, tendrás total control sobre tu tanque, aunque habrá que tener en cuenta factores como la rotación de la torreta y el campo de visión.</p>
+
+        <p>Esta API utiliza, aunque no solo, Java como lenguaje. De momento en la Tankathon solo vamos a dar soporte a Java.</p>
+
+        <p>Podréis encontrar toda la información sobre robocode en <a href="http://robocode.sourceforge.net" target="_blank">su página web</a>.</p>
+        <!-- END: ¿Qué es Robocode -->
+
+        <!-- BEGIN: La competición -->
         <h3 id="la-competicion">La competición</h3>
         <p>La competición se basará en combates en formato melé (todos contra todos) de hasta 4 tanques cada vez. Se obtendrá un ganador utilizando el sistema de puntuación implementado por la propia API.</p>
 
@@ -62,16 +71,41 @@
         <p>Estas categorías son orientativas, y podéis intentar participar en una categoría de nivel superior si os veis capacitados para ello. Bajo nuestra recomendación, tomad esta decisión con cautela para poder disfrutar más del evento.</p>
 
         <p>Finalmente, se realizarán unas rondas de combates inter-categoría donde los más pequeños se puedan enfrentar a los más grandes. Quién sabe, puede que alguno nos sorprenda...</p>
+        <!-- END: La competición -->
 
+        <!-- BEGIN: Premios -->
+        <h3 id="premios">Premios</h3>
+
+        <p>Gracias a <a href="http://www.lurtis.com" target="_blank">Lurtis Rules</a>, ¡podréis ganar una nueva Raspberry Pi 2!. Cada mientro de los equipos ganadores recibirá la suya.</p>
+
+        <p>Para poder ganar tu Raspberry Pi 2, solo tendréis que ser el mejor equipo entre el resto de participantes de vuestra misma categoría.</p>
+
+        <p>¡Apuntaros al combate y demostrad ser los dignos ganadores de estas Raspberry Pi 2 que regalamos!.</p>
+        <!-- END: Premios -->
+
+        <!-- BEGIN: Dónde y Cuándo -->
         <h3 id="donde-y-cuando">¿Dónde y Cuándo?</h3>
         <p>Se realizará en la <a href="http://www.fi.upm.es/">Escuela Técnica Superior de Ingenieros Informáticos</a> de la Universidad Politécnica de Madrid, localizada en el Campus de Montegancedo, Boadilla del Monte, Madrid.</p>
 
         <!-- TODO: Más información para la localización del evento -->
 
         <p>Está previsto para el sábado 9 de mayo de 2015, y con una duración de 24 horas. Próximamente se concretará de forma más precisa los horarios.</p>
+        <!-- END: Dónde y Cuándo -->
 
+        <!-- BEGIN: Desarrollo del evento -->
+        <h3 id="desarrollo">Desarrollo del evento</h3>
+
+        <p>Cada equipo desarrollará a lo largo del evento un controlador para un tanque virtual utilizando la API de Robocode</p>
+
+        <p>Durante el mismo evento, se tendrán en ejecución simulaciones que mostrarán los bots de los participantes que hayan enviado sus progresos combatiendo entre ellos, o en su defecto, contra bots de ejemplo. Estos combates no contarán para la evaluación de un ganador.</p>
+
+        <p>Al final del evento y superada la hora de entrega límite marcada, se comenzarán las simulaciones de los combates definitivos utilizando la última versión del bot de cada equipo que haya sido aportado. Mientras se procesan los resultados de los combates, los participantes podrán ver por pantalla la simulación de varios de los combates discutiendo sus jugadas y estrategias.</p>
+        <!-- END: Desarollo del evento -->
+
+        <!-- BEGIN: Normas -->
         <h3 id="normas">Normas</h3>
         <p>Puedes encontrar las normas en <a href="normativa.html">esta sección</a> de la web</p>
+        <!-- END: Normas -->
 
       </div>
     </div>
@@ -115,8 +149,8 @@
       e.preventDefault();
       var hash = this.hash;
       $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 1000, function(){
-         window.location.hash = hash;
-        });
+        window.location.hash = hash;
+      });
     });
 
     $( window ).resize(function() {
